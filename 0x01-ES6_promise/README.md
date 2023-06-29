@@ -1,1 +1,1 @@
-Making promises with ascronizes programming
+# 0x01. ES6 Promises

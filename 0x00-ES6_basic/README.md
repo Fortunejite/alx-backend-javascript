@@ -1,1 +1,1 @@
-First directory for the specilization phase
+# ES6 Basics
