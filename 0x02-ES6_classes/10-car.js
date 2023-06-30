@@ -13,6 +13,14 @@ export default class Car {
     this._color = color;
   }
 
+  [_copySymbol]() {
+    // Implementation of the copy method
+    const brand = this._brand; // Copy the array
+    const motor = this._motor
+    const color = this._color
+    return new MyClass(brand, motor, color);
+  }
+
   cloneCar() {
     const _copySymbol = Symbol('copy');
     return this[_copySymbol]();
