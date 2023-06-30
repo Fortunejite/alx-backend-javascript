@@ -14,6 +14,7 @@ export default class Car {
   }
 
   cloneCar() {
-    return this;
+    const _copySymbol = Symbol('copy');
+    return this[_copySymbol]();
   }
 }
