@@ -1,3 +1,5 @@
+const _copySymbol = Symbol('copy');
+
 export default class Car {
   constructor(brand, motor, color) {
     if (typeof brand !== 'string') {
@@ -22,7 +24,6 @@ export default class Car {
   }
 
   cloneCar() {
-    const _copySymbol = Symbol('copy');
     return this[_copySymbol]();
   }
 }
